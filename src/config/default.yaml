@@ -1,0 +1,14 @@
+app:
+  name: "Neon-Ai"
+  host: "0.0.0.0"
+  port: 3000
+
+deployment:
+  compose_file: "deploy/docker/docker-compose.yml"
+  models_dir: "models"
+  default_model: "seneca-cybersecurity-q4"
+  monitor_script: "deploy/scripts/monitor.sh"
+
+logging:
+  level: "INFO"
+  format: "[%(asctime)s] %(levelname)s %(message)s"

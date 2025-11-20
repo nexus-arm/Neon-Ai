@@ -1,0 +1,37 @@
+models:
+  - name: seneca-cybersecurity-q4
+    role: malware-analysis
+    size_gb: 4.5
+    source: ollama
+    default: true
+    notes: "Primary incident-response model"
+  - name: whiterabbitneo-7b
+    role: red-team
+    size_gb: 4.5
+    source: ollama
+    notes: "Offensive security toolkit"
+  - name: cyberguard-7b
+    role: blue-team
+    size_gb: 4.8
+    source: ollama
+    notes: "SOC-style defensive analysis"
+  - name: codeshield-7b
+    role: code-security
+    size_gb: 4.5
+    source: ollama
+    notes: "Static code analysis and SAST guidance"
+  - name: secgpt-13b
+    role: compliance-and-audit
+    size_gb: 8.5
+    source: ollama
+    notes: "Heavier model for governance and compliance"
+  - name: qwen2.5-coder-7b
+    role: devsecops
+    size_gb: 4.7
+    source: ollama
+    notes: "Secure coding and automation"
+  - name: deepseek-r1
+    role: reasoning
+    size_gb: 8.0
+    source: ollama
+    notes: "Threat modeling and complex reasoning"

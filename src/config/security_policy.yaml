@@ -1,0 +1,22 @@
+network:
+  allowed_ports:
+    - 22
+    - 3000
+    - 8080
+    - 11434
+  enforce_firewall: true
+  notes: "Restrict additional ports unless required for new services."
+
+authentication:
+  require_admin_account: true
+  disable_self_signup: true
+  session_timeout_minutes: 30
+
+hardening:
+  audit_logging: true
+  dependency_pin: true
+  container_user: "nonroot"
+
+monitoring:
+  enable_fail2ban: true
+  enable_metrics: false  # flip to true once metrics stack is defined
